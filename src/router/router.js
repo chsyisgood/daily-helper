@@ -9,8 +9,9 @@ import {
 
 // Routers
 import RouterBill from './bill';
+import RouterReport from './report';
 
-import IndexPage from '../component/page';
+import IndexPage from '../container/index';
 
 class RouterIndex extends React.Component {
     constructor(props) {
@@ -24,6 +25,7 @@ class RouterIndex extends React.Component {
                 <div>
                     <Route path='/' exact component={ IndexPage } />
                     <Route path='/bill' component={ RouterBill } />
+                    <Route path='/report' component={ RouterReport } />
                 </div>
             </Router>
         );

@@ -7,8 +7,8 @@ import {
     withRouter
 } from "react-router-dom";
 
-import BillIndexPage from '../component/page/bill/index.js';
-import BillFormPage from '../component/page/bill/form.js';
+import BillIndexPage from '../container/index.js';
+import BillFormPage from '../container/bill/form.js';
 
 class RouterBill extends React.Component {
     constructor(props) {

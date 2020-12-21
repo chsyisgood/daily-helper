@@ -1,0 +1,26 @@
+
+.page-title {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.card-item {
+    margin-bottom: .8rem;
+    margin-top: .8rem;
+    background-color: red;
+}
+
+.point-component {
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.panel-item {
+    background-color: red;
+    padding: 1rem 1rem 1rem 1rem;
+    color: white;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

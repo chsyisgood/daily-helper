@@ -1,12 +1,14 @@
 'use strict'
 
-const Joi = require('joi');
+const Joi = require('@hapi/joi');
 
 const BILL_SCHEMA = Joi.object().keys({
-    id: Joi.string().guid().required(),
     type: Joi.string().trim().required(),
-    amount: Joi.number().required()
+    price: Joi.number().required(),
+    date: Joi.string().trim().required(),
+    isPositiveCost: Joi.boolean().required()
 }).label('bill');
+
 
 const validate = (data) => {
     return Joi.validate(data, BILL_SCHEMA, {
